@@ -1,1 +1,1 @@
-# This Project shows how to work with the GitHub Actions 
+# This Project shows how to work with the GitHub Actions
