@@ -14,10 +14,10 @@ jobs:
 
         steps:
         - name: Checkout code
-          uses: action/checkout@v3
+          uses: actions/checkout@v3
 
         - name: Set up Python
-          uses: action/setup-python@v4
+          uses: actions/setup-python@v4
           with:
             python-version: '3.9'
 
@@ -63,7 +63,7 @@ jobs:
             tags: ${{secrets.DOCKER_USERNAME}}/flasktest-app:latest
             
         - name: Image digest
-          run: echo ${{steps.build-and-publish.outputs.digest}}
+          run: echo ${{ steps.build-and-publish.outputs.digest }}
          
 
 
